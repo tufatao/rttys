@@ -31,9 +31,11 @@
         <Tooltip v-if="row.online" placement="top" :content="$t('Access your device\'s Shell')">
           <i class="iconfont icon-shell" style="font-size: 40px; color: black; cursor:pointer;" @click="connectDevice(row.id)"/>
         </Tooltip>
+        <!--
         <Tooltip v-if="row.online" placement="top" :content="$t('Access your devices\'s Web')">
           <i class="iconfont icon-web" style="font-size: 40px; color: #409EFF; cursor:pointer;" @click="connectDeviceWeb(row.id)"/>
         </Tooltip>
+        -->
         <span v-if="!row.online" style="margin-left: 10px; color: red">{{ $t('Device offline') }}</span>
       </template>
     </Table>
